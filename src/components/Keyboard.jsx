@@ -41,15 +41,15 @@ export const Keyboard = () => {
             <div className="col-span-10 grid grid-cols-10 gap-2">
                 {
                     numbers.map((num, index) => (
-                        <ButtonChar key={index} value={num} onClick={handleNumberClick}>{num}</ButtonChar>
+                        <ButtonChar key={index} ariaLabel={num} value={num} onClick={handleNumberClick}>{num}</ButtonChar>
                     ))
                 }
             </div>
             <div className="col-span-2 flex flex-col gap-2">
-                <ButtonChar key='deleteButton' onClick={removeLastNumber}>
+                <ButtonChar key='deleteButton' ariaLabel='delete' onClick={removeLastNumber}>
                     <Backspace height={32} width={32} stroke='black'></Backspace>
                 </ButtonChar>
-                <ButtonChar key='enterButton' onClick={() => addNewNumberPlayed(numberPlay)}>
+                <ButtonChar key='enterButton' ariaLabel='enter' onClick={() => addNewNumberPlayed(numberPlay)}>
                     <Check height={32} width={32} stroke='black'></Check>
                 </ButtonChar>
             </div>

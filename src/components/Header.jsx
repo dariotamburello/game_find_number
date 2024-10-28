@@ -17,11 +17,11 @@ export const Header = () => {
     return (
         <section className="relative">
             <header className="w-full pt-5 flex flex-row justify-between">
-                <button onClick={() => resetGame()} className="ml-5 active:rotate-180 transition-all duration-[100ms]">
+                <button onClick={() => resetGame()} aria-label='New game' className="ml-5 active:rotate-180 transition-all duration-[100ms]">
                     <Reload height={30} width={30}></Reload>
                 </button>
                 <h1 className="text-2xl uppercase font-bold text-center font-FigtreeBold">{t('title')}</h1>
-                <button className="mr-5 hover:cursor-pointer transition-all" onClick={handleButtonMenu}>
+                <button className="mr-5 hover:cursor-pointer transition-all" aria-label='Menu' onClick={handleButtonMenu}>
                     {
                         menu
                             ? <MenuOpen height={30} width={30}></MenuOpen>
