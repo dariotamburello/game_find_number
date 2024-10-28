@@ -56,7 +56,7 @@ export const GameConfiguration = () => {
                 </select>
             </div>
             <div className="flex flex-row justify-between gap-3">
-                <label htmlFor="max-attemps">{t('configuration.max_attemps')}:</label>
+                <label htmlFor="max-attemps">{t('configuration.max_attempts')}:</label>
                 <select id="max-attemps" onChange={handleChangeAttemps} value={maxAttempts}
                     className="rounded-md dark:text-black">
                     <option value="10">10</option>

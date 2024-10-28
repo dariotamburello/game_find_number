@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 const defaultConfig = {
     darkmode: 'true',
     difficulty: 'normal',
-    digits: 5,
+    digits: 4,
     maxAttemps: 10,
     language: null
 }
