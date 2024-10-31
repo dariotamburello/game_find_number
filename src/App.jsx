@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import './App.css'
 import { Board } from './components/Board'
 import { Header } from './components/Header'
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <main className='flex flex-col align-middle justify-between h-screen max-w-xl mx-auto text-black dark:text-slate-100'>
+        <Analytics></Analytics>
         <ConfigurationProvider>
           <NumberPlayProvider>
             <StatisticsProvider>
